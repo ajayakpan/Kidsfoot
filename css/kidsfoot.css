@@ -1,0 +1,56 @@
+body {
+    background-color: whitesmoke;
+    margin: 0px;
+    /* padding: 0px; */
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    background: #4f99df;
+}
+
+h2 {
+    color: rgb(83, 79, 79);
+
+}
+
+.container {
+    background-color: beige;
+    background-image: url("images/building.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: rgb(106, 106, 223);
+    background-size: cover;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    /* background-image: url("images/BLUKOLA.jpg"); */
+   
+}
+
+.box img {
+    width: 350px;
+    height: 200px;
+    border-radius: 30px;
+}
