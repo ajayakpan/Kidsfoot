@@ -1,3 +1,4 @@
+var deadline = 'January 20 2020';
 function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date());
     var seconds = Math.floor((t / 1000) % 60);
@@ -39,3 +40,4 @@ function getTimeRemaining(endtime) {
   
   var deadline = new Date(Date.parse(new Date()) + 30 * 24 * 60 * 60 * 1000);
   initializeClock('clockdiv', deadline);
+  

@@ -48,7 +48,7 @@ header{
 }
 
 .site-navigation ul {
-  background: #c39b46;
+  background: #e67817;
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -57,7 +57,7 @@ header{
 
 .site-navigation li {
     color: #fff;
-  background: #c39b46;
+  background: #e67817;
     display: block;
     float: left;
     margin: 0 2px 0 0;
