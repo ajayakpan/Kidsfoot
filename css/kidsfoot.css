@@ -208,60 +208,6 @@ header{
     color: #003464;
 }
 
-#about {
-    background-color:white;
-    width: 900px;
-    height: 600px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: solid 2px grey;
-    font-size: 1.5em;
-}
-
-#contact {
-    background-color:white;
-    width: 900px;
-    height: 600px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: solid 2px grey;
-    font-size: 1.5em;
-}
-
-#services {
-    background-color:white;
-    width: 900px;
-    height: 600px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: solid 2px grey;
-    font-size: 1.5em;
-}
-#sales {
-    background-color:white;
-    width: 900px;
-    height: 600px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: solid 2px grey;
-    font-size: 1.5em;
-}
 
 .top-button {
     position: fixed;
