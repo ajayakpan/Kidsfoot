@@ -24,7 +24,7 @@ function getTimeRemaining(endtime) {
     function updateClock() {
       var t = getTimeRemaining(endtime);
   
-      daysSpan.innerHTML = t.days;
+      daysSpan.innerHTML = ('0' + t.days).slice();
       hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
       minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
       secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
