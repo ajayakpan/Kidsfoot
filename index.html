@@ -1,98 +1,294 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kids Football</title>
-    <link rel="icon" href="images/KidsLogo.jpeg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/kidsfoot.css">
-    <script src="main.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Radio Nigeria Kids Football Challenge</title>
+	<link rel="icon" href="img/KidsLogo.jpeg">
+	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/fixed.css">
 </head>
-<body>
-    <header>
-        <a href="index.html">
-            <img class="blu" src="images/KidsLogo.jpeg" alt="">        
-        </a>        
-        <nav id="navigation" class="site-navigation" role="navigation">
-            <ul class="menu">
-              <li class="menu-item"><a href="index.html">History</a></li>
-              <li class="menu-item"><a href="index.html">The Challenge</a></li>
-              <li class="menu-item"><a href="contact.html">Contact Us</a>
-              <li class="menu-item"><a href="#">Register</a></li>
-              
-            </ul>
-          </nav>
-    </header>
-    <section class="container">
-        
-    <h1><b>Countdown To Next Edition <br> January 20, 2020</b></h1><br>
-    
-    <div id="clockdiv">
-  <div>
-    <span class="days"></span>
-    <div class="smalltext">Days</div>
-  </div>
-  <div>
-    <span class="hours"></span>
-    <div class="smalltext">Hours</div>
-  </div>
-  <div>
-    <span class="minutes"></span>
-    <div class="smalltext">Minutes</div>
-  </div>
-  <div>
-    <span class="seconds"></span>
-    <div class="smalltext">Seconds</div>
-  </div>
-    </div>
 
-  <script>
-    var deadline = 'January 20 2020';
-function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    return {
-      'total': t,
-      'days': days,
-      'hours': hours,
-      'minutes': minutes,
-      'seconds': seconds
-    };
-  }
-  
-  function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector('.days');
-    var hoursSpan = clock.querySelector('.hours');
-    var minutesSpan = clock.querySelector('.minutes');
-    var secondsSpan = clock.querySelector('.seconds');
-  
-    function updateClock() {
-      var t = getTimeRemaining(endtime);
-  
-      daysSpan.innerHTML = ('0' + t.days).slice();
-      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-  
-      if (t.total <= 0) {
-        clearInterval(timeinterval);
-      }
-    }
-  
-    updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
-  }
-  
-  var deadline = new Date(Date.parse(new Date('January 20 2020')) + 0 * 24 * 60 * 60 * 1000);
-  initializeClock('clockdiv', deadline);
-  
-  </script>      
-    </section>
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+<!--- Start Home Section -->
+<div id="home">
+
+<!-- Start of Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<a class="navbar-brand" href="#"><img src="img/KidsLogo.jpeg"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" 
+	data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+	<ul class="navbar-nav ml-auto">
+		<li class="nav-item" >
+			<a class="nav-link" href="#home">Home</a>
+		</li>
+		<li class="nav-item" >
+			<a class="nav-link" href="#about">About Us</a>
+		</li>
+		<li class="nav-item" >
+			<a class="nav-link" href="#challenge">The Challenge</a>
+		</li>
+		<li class="nav-item" >
+			<a class="nav-link" href="#register">Register</a>
+		</li>
+		<li class="nav-item" >
+			<a class="nav-link" href="#contact">Contact Us</a>
+		</li>	
+
+	</ul>
+	</div>
+
+</nav>
+
+<!-- End of Navigation -->
+
+<!-- Start of Landing Page -->
+<div class="landing">
+	<div class="home-wrap">
+		<div class="home-inner">
+
+		</div>
+	</div>
+</div>
+<div class="caption text-center">
+	<h1>Countdown To Next Edition <br> January 20, 2020</h1>
+
+	<div id="clockdiv">
+		<div>
+		  <span class="days"></span>
+		  <div class="smalltext">Days</div>
+		</div>
+		<div>
+		  <span class="hours"></span>
+		  <div class="smalltext">Hours</div>
+		</div>
+		<div>
+		  <span class="minutes"></span>
+		  <div class="smalltext">Minutes</div>
+		</div>
+		<div>
+		  <span class="seconds"></span>
+		  <div class="smalltext">Seconds</div>
+		</div>
+	 </div> <br> <br>
+			  
+	<script>
+	  var deadline = 'January 20 2020';
+	  function getTimeRemaining(endtime) {
+	  var t = Date.parse(endtime) - Date.parse(new Date());
+	  var seconds = Math.floor((t / 1000) % 60);
+	  var minutes = Math.floor((t / 1000 / 60) % 60);
+	  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+	  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+		  return {
+		'total': t,
+		'days': days,
+		'hours': hours,
+		'minutes': minutes,
+		'seconds': seconds
+		  };
+		}
+				
+	function initializeClock(id, endtime) {
+		  var clock = document.getElementById(id);
+		  var daysSpan = clock.querySelector('.days');
+		  var hoursSpan = clock.querySelector('.hours');
+		  var minutesSpan = clock.querySelector('.minutes');
+		  var secondsSpan = clock.querySelector('.seconds');
+				
+		  function updateClock() {
+			var t = getTimeRemaining(endtime);
+				
+		daysSpan.innerHTML = ('0' + t.days).slice();
+		hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+		minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+		secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+				
+		if (t.total <= 0) {
+		  clearInterval(timeinterval);
+		}
+	  }
+				
+	  updateClock();
+	  var timeinterval = setInterval(updateClock, 1000);
+				}
+				
+		var deadline = new Date(Date.parse(new Date('January 20 2020')) + 0 * 24 * 60 * 60 * 1000);
+		initializeClock('clockdiv', deadline);
+				
+	</script> 
+	<a class="btn btn-outline-light btn-lg" href="#register">Register</a>    
+
+</div>
+
+<!-- End of Landing Page -->
+</div>
+<!-- End Home Section -->
+
+<!--- Start About Us Section -->
+<div id="about" class="offset">
+	<div class="col-12 narrow text-center">
+		<h1>Radio Nigeria Kids Football Challenge</h1>
+		<p>As part of our Corporate Social Responsibility (CSR), Radio Nigeria South South Zone under the leadership of Engr. Dr. Jonas Emechebe
+			decided to introduce the Kids Football Challenge to help discover young talent and considering how important sports is to Nigeria,
+			and in line with our motor of Uplifting the People and Uniting the Nation, it only seemed like a natural choice to use footbal at this level.
+		</p>
+		<h3>Past Winners</h3>
+		<p>The inuagural winner of the Radio Nigeria Kids Football Challenge is School, Rumuelumeni, Port Harcourt</p>
+
+	</div>
+
+</div>
+	
+<!-- End About Us Section -->
+
+<!--- Start The Challenge Section -->
+<div id="challenge" class="offset">
+	<!-- Jumbotron  -->
+	<div class="jumbotron">
+		<div class="narrow text-center">
+			<div class="col-12">
+				<h3 class="heading">The Challenge</h3>
+				<div class="heading-underline" ></div>
+			</div>
+
+			<div class="row text-center">
+				<div class="col-md-4">
+					<div class="challenge">
+						<i class="fas fa-users fa-4x" data-fa-transform="shrink-3 up-5"></i>
+						<h3>Group Stage</h3>
+						<p>All 24 teams will be grouped in 6 groups of 4  teams each and faceoff each team member</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="challenge">
+						<i class="fas fa-futbol fa-4x" data-fa-transform="shrink-3 up-5"></i>
+						<h3>Knockout Stage</h3>
+						<p>The top 2 teams will qualify automatically for the round of 16, to be joined by the best 4 third place finishers</p>
+						<p>Winners of each round of 16 fixture will play until they get to the final</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="challenge">
+						<i class="fas fa-trophy fa-4x" data-fa-transform="shrink-3 up-5"></i>
+						<h3>The Finals</h3>
+						<p>The winner in the finals will go home with prize money and a giant trophy. the final match will be 
+							preceeded by the third place playoffs.
+						</p>
+					</div>
+				</div>
+			<!-- End of Row -->
+				<div >
+					<a class="btn btn-secondary btn-md" href="img/RULES .pdf" target="blank">Rules of the Challenge</a>
+				</div>
+		
+
+		 	</div>
+			
+
+		</div>
+<!-- End of Narrow -->
+	</div>
+	<!-- End of Jumbotron -->
+
+</div>
+	
+<!-- End The Challenge Section -->
+
+<!--- Start Register Section -->
+<div id="register" class="offset">
+	<div class="fixed-background text-center">
+		<div class="row dark text-center">
+			<div class="col-12">
+				<h3 class="heading">Register</h3>
+				<div class="heading-underline" ></div>
+			</div>
+
+			<div class="col-md-4">
+					<div class="register">
+						<i class="fab fa-wpforms fa-4x" data-fa-transform="shrink-3 up-5"></i>
+						<h3>Registration Forms</h3>
+						<p>Entry into the Challenge is through duly completed registration forms.</p>
+						<p>The forms cost N15,000 only</p>
+					</div>
+				</div>
+		
+				<div class="col-md-4">
+					<div class="register">
+						<i class="far fa-money-bill-alt fa-4x" data-fa-transform="shrink-3 up-5"></i>
+						<h3>Completed Forms</h3>
+						<p>Completed forms should be submitted as per stated in the <a href="img/RULES .pdf" target="blank">Rules</a>.at Treasure FM </p>
+					</div>
+				</div>
+		
+				<div class="col-md-4">
+						<div class="register">
+							<i class="far fa-money-bill-alt fa-3x" data-fa-transform="shrink-3 up-5"></i>
+							<h3>All Set</h3>
+							<p>Please read the <a href="img/RULES .pdf" target="blank">Rules</a> carefully as errant teams shall be disqualified.</p>
+						</div>
+					</div>
+
+		</div>
+
+		
+		<!-- End Row Dark -->
+		<div class="fixed-wrap">
+			<div class="fixed">
+			</div>
+		</div>
+			
+
+	</div> 
+	<!-- End of Fixed fixed-background -->
+
+</div>
+	
+<!-- End Register Section -->
+
+<!--- Start Contact Us Section -->
+<div id="contact" class="offset">
+	<footer>
+		<div class="row justify-content-center">
+			<div class="col-md-5 text-center">
+				<img src="img/KidsLogo.jpeg" alt="">
+				<p>We are at your service and ever ready to respond to all your questions!</p>
+				<strong>Contact Info</strong>
+				<p><a href="tel:+08033422845">08033422845</a>,<a href="tel:+08033506706">08033506706</a>,<a href="tel:+09082310127">09082310127</a></p>
+				<p><a href="mailto:info@radionigeriakidsfootballchallenge.com">info@radionigeriakidsfootballchallenge.com</a></p>
+				<a href="http://www.facebook.com/RadioNgKidsFoot" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="http://www.twitter.com/radiongkidsfoot" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="http://www.instagram.com/radiongkidsfoot" target="_blank"><i class="fab fa-instagram"></i></a> 
+
+			</div>
+
+			<hr class="socket">
+			&copy;Alien Perception
+
+		</div>
+	</footer>
+
+</div>
+	
+<!-- End Contact Us Section -->
+
+
+
+<!--- Script Source Files -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<!--- End of Script Source Files -->
+
 </body>
-<!-- <script src="js/kidsfoot.js"></script> -->
 </html>
+
+
