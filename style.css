@@ -94,6 +94,7 @@ body {
   .smalltext{
       padding-top: 5px;
       font-size: 16px;
+      color: #505962;
   }
   
 /* End of Countdown Timer */
@@ -127,6 +128,23 @@ body {
 #about a {
   color: #1ebba3;
 
+}
+
+.narrow img {
+  border: 2px solid #ddd;
+  height: 300px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
+  align-items: center;
+}
+
+.narrow img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* border: 2.5px solid #1ebba3; */
 }
 
 /* The Challenge Section */
@@ -197,13 +215,31 @@ h3.heading {
 .register a {
   color: #1ebba3;
 }
+
+/* News and Media Section */
+
+.news img {
+  border: 2px solid #ddd;
+  height: 400px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
+  align-items: center;
+
+}
+
+/* End of News and Media  */
+
 /* Contact Section and footer */
 
 footer {
   background-color: #40474e;
   color: #1ebba3;
   padding: 2rem 0 2rem;
-  margin-top: 1rem;
+  margin-top: .2rem;
   }
 
   footer img {
@@ -244,6 +280,12 @@ footer {
       font-size: 2.3rem;
       letter-spacing: .15rem;
       padding-bottom: .5rem;
+    }
+
+    .narrow img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
     }
 
   }
